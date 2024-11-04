@@ -8,34 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: url(2.png) no-repeat center center fixed; /* الخلفية ثابتة وتغطي كامل الصفحة */
-            background-size: cover; /* ضبط حجم الخلفية لتغطية الصفحة بالكامل */
-            font-family: 'Poppins', sans-serif; /* استخدام الخط الجديد */
+            background: url(2.png) no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
             background-color: #1b1b1b;
             color: #e5e5e5;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
-            backdrop-filter: blur(5px); /* إضافة تأثير ضبابي للخلفية */
+            backdrop-filter: blur(5px);
         }
 
         .profile-container {
             text-align: center;
-            background-color: rgba(45, 45, 45, 0.8); /* خلفية زجاجية */
-            padding: 50px; /* زيادة المساحة حول المحتوى */
-            border-radius: 20px; /* تعديل انحناء الحواف */
-            box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); /* إضافة ظل أقوى */
-            width: 95%; /* عرض أكبر للـ container */
-            max-width: 550px; /* زيادة الحد الأقصى للعرض */
+            background-color: rgba(45, 45, 45, 0.8);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3);
+            width: 95%;
+            max-width: 550px;
         }
         .profile-container img {
-            width: 150px; /* زيادة عرض الصورة */
-            height: 150px; /* زيادة ارتفاع الصورة */
-            border-radius: 50%; /* الحفاظ على الشكل الدائري */
-            margin-bottom: 20px; /* مسافة تحت الصورة */
-            border: 5px solid #00ff00; /* زيادة سمك الحدود */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #00ff00;
         }
 
         .profile-name {
@@ -47,34 +48,34 @@
         .profile-links {
             margin-top: 30px;
             display: flex;
-            flex-direction: column; /* ترتيب العناصر عمودياً */
-            align-items: center; /* محاذاة العناصر في المنتصف */
+            flex-direction: column;
+            align-items: center;
         }
         .profile-links div {
-            margin: 15px 0; /* زيادة التباعد العمودي بين المجموعات */
-            display: flex; /* استخدام الفليكس لترتيب الأيقونات والنص */
-            align-items: center; /* محاذاة العناصر في المنتصف */
-            background-color: #333; /* خلفية مستطيل الأيقونات */
-            border-radius: 15px; /* انحناء حواف المستطيل */
-            padding: 10px 15px; /* مسافات داخلية للمستطيل */
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            border-radius: 15px;
+            padding: 10px 15px;
         }
         .profile-links a {
             color: #00ff00;
-            font-size: 24px; /* تصغير حجم الأيقونات قليلاً */
+            font-size: 24px;
             text-decoration: none;
             transition: color 0.3s;
-            margin-left: 10px; /* مسافة بين النص والأيقونة */
+            margin-left: 10px;
         }
         .profile-links a:hover {
             color: #008f00;
         }
         .social-group {
-            display: flex; /* عرض الأيقونات بشكل أفقي */
-            justify-content: center; /* محاذاة في الوسط */
-            margin: 10px 0; /* تباعد عمودي بين المجموعات */
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
         }
         .social-group div {
-            margin: 0 10px; /* تباعد أفقي بين الأيقونات */
+            margin: 0 10px;
         }
         .email {
             font-size: 16px;
@@ -86,8 +87,11 @@
             font-size: 24px;
             color: #00ff00;
         }
-        p{
-color:color: #00ff00;
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #bbbbbb;
+            font-size: 14px;
         }
     </style>
     <!-- إضافة مكتبة أيقونات Font Awesome -->
@@ -109,12 +113,12 @@ color:color: #00ff00;
             <div class="social-group">
                 <div>
                     <a href="https://www.facebook.com/share/iUzGdqFvPSf9J1yz/" title="Facebook Women">
-                        <i class="fas fa-female"></i> صفحة النساء
+                        <i class="fab fa-facebook"></i> صفحة النساء
                     </a>
                 </div>
                 <div>
                     <a href="https://www.facebook.com/hulkELMAHALA?mibextid=ZbWKwL" title="Facebook Men">
-                        <i class="fas fa-male"></i> صفحة الرجال
+                        <i class="fab fa-facebook"></i> صفحة الرجال
                     </a>
                 </div>
             </div>
@@ -125,13 +129,16 @@ color:color: #00ff00;
                     </a>
                 </div>
                 <div>
-                    <a href="https://wa.me/201274447488" title="WhatsApp"> <!-- رابط واتس آب -->
+                    <a href="https://wa.me/201274447488" title="WhatsApp">
                         <i class="fab fa-whatsapp"></i> واتس آب
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <P>Powered By AKCode</P>
+    
+    <footer>
+        Powered by Ak code
+    </footer>
 </body>
 </html>
