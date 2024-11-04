@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف شخصي - كمال الأجسام</title>
+    <!-- رابط الخط من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url(2.png) no-repeat center center fixed; /* الخلفية ثابتة وتغطي كامل الصفحة */
+            background-size: cover; /* ضبط حجم الخلفية لتغطية الصفحة بالكامل */
+            font-family: 'Poppins', sans-serif; /* استخدام الخط الجديد */
+            background-color: #1b1b1b;
+            color: #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            backdrop-filter: blur(5px); /* إضافة تأثير ضبابي للخلفية */
+        }
+
+        .profile-container {
+            text-align: center;
+            background-color: rgba(45, 45, 45, 0.8); /* خلفية زجاجية */
+            padding: 50px; /* زيادة المساحة حول المحتوى */
+            border-radius: 20px; /* تعديل انحناء الحواف */
+            box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); /* إضافة ظل أقوى */
+            width: 95%; /* عرض أكبر للـ container */
+            max-width: 550px; /* زيادة الحد الأقصى للعرض */
+        }
+        .profile-container img {
+            width: 150px; /* زيادة عرض الصورة */
+            height: 150px; /* زيادة ارتفاع الصورة */
+            border-radius: 50%; /* الحفاظ على الشكل الدائري */
+            margin-bottom: 20px; /* مسافة تحت الصورة */
+            border: 5px solid #00ff00; /* زيادة سمك الحدود */
+        }
+
+        .profile-name {
+            font-size: 28px;
+            color: #00ff00;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .profile-links {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column; /* ترتيب العناصر عمودياً */
+            align-items: center; /* محاذاة العناصر في المنتصف */
+        }
+        .profile-links div {
+            margin: 15px 0; /* زيادة التباعد العمودي بين المجموعات */
+            display: flex; /* استخدام الفليكس لترتيب الأيقونات والنص */
+            align-items: center; /* محاذاة العناصر في المنتصف */
+            background-color: #333; /* خلفية مستطيل الأيقونات */
+            border-radius: 15px; /* انحناء حواف المستطيل */
+            padding: 10px 15px; /* مسافات داخلية للمستطيل */
+        }
+        .profile-links a {
+            color: #00ff00;
+            font-size: 24px; /* تصغير حجم الأيقونات قليلاً */
+            text-decoration: none;
+            transition: color 0.3s;
+            margin-left: 10px; /* مسافة بين النص والأيقونة */
+        }
+        .profile-links a:hover {
+            color: #008f00;
+        }
+        .social-group {
+            display: flex; /* عرض الأيقونات بشكل أفقي */
+            justify-content: center; /* محاذاة في الوسط */
+            margin: 10px 0; /* تباعد عمودي بين المجموعات */
+        }
+        .social-group div {
+            margin: 0 10px; /* تباعد أفقي بين الأيقونات */
+        }
+        .email {
+            font-size: 16px;
+            color: #bbbbbb;
+            margin-top: 20px;
+        }
+        .icon {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #00ff00;
+        }
+    </style>
+    <!-- إضافة مكتبة أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Photo"> <!-- ضع هنا رابط صورة كمال الأجسام -->
+        <div class="profile-name">
+            <a href="https://www.facebook.com/hulkELMAHALA?mibextid=ZbWKwL" title="Coach Mohamed El-ekhtiar" style="color: #00ff00; text-decoration: none;">
+                Coach Mohamed El-ekhtiar <i class="fas fa-dumbbell"></i>
+            </a>
+        </div>
+        <div class="phone-number" style="font-size: 20px; color: #00ff00; margin-top: 10px;">
+            01274447488
+        </div>
+      
+        <div class="profile-links">
+            <div class="social-group">
+                <div>
+                    <a href="https://www.facebook.com/share/iUzGdqFvPSf9J1yz/" title="Facebook Women">
+                        <i class="fas fa-female"></i> صفحة النساء
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/hulkELMAHALA?mibextid=ZbWKwL" title="Facebook Men">
+                        <i class="fas fa-male"></i> صفحة الرجال
+                    </a>
+                </div>
+            </div>
+            <div class="social-group">
+                <div>
+                    <a href="https://www.messenger.com/t/100005415905622" title="Messenger">
+                        <i class="fab fa-facebook-messenger"></i> ماسنجر
+                    </a>
+                </div>
+                <div>
+                    <a href="https://wa.me/201274447488" title="WhatsApp"> <!-- رابط واتس آب -->
+                        <i class="fab fa-whatsapp"></i> واتس آب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
