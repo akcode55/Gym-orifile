@@ -11,7 +11,6 @@
             background: url(2.png) no-repeat center center fixed;
             background-size: cover;
             font-family: 'Poppins', sans-serif;
-            background-color: #1b1b1b;
             color: #e5e5e5;
             display: flex;
             align-items: center;
@@ -30,13 +29,22 @@
             box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3);
             width: 95%;
             max-width: 550px;
+            transition: transform 0.3s;
         }
+        .profile-container:hover {
+            transform: scale(1.02);
+        }
+        
         .profile-container img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
             border: 5px solid #00ff00;
+            transition: transform 0.3s;
+        }
+        .profile-container img:hover {
+            transform: rotate(10deg);
         }
 
         .profile-name {
@@ -46,11 +54,13 @@
             font-weight: bold;
         }
         .profile-links {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* مسافة بين المجموعات */
+}
+
         .profile-links div {
             margin: 15px 0;
             display: flex;
@@ -58,40 +68,37 @@
             background-color: #333;
             border-radius: 15px;
             padding: 10px 15px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .profile-links div:hover {
+            background-color: #444;
+            transform: scale(1.05);
         }
         .profile-links a {
             color: #00ff00;
             font-size: 24px;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s, text-shadow 0.3s;
             margin-left: 10px;
         }
         .profile-links a:hover {
             color: #008f00;
+            text-shadow: 0 0 10px #00ff00;
         }
+        
+        /* إضافة تباعد أكبر بين الأزرار */
         .social-group {
             display: flex;
             justify-content: center;
+            gap: 20px; /* تباعد بين الأزرار */
             margin: 10px 0;
         }
-        .social-group div {
-            margin: 0 10px;
-        }
-        .email {
-            font-size: 16px;
-            color: #bbbbbb;
-            margin-top: 20px;
-        }
-        .icon {
-            margin-top: 15px;
-            font-size: 24px;
-            color: #00ff00;
-        }
+
         footer {
             text-align: center;
             margin-top: 20px;
-            color: #bbbbbb;
-            font-size: 14px;
+            color: #e5e5e5;
+            font-size: 20px;
         }
     </style>
     <!-- إضافة مكتبة أيقونات Font Awesome -->
@@ -99,7 +106,7 @@
 </head>
 <body>
     <div class="profile-container">
-        <img src="profile.jpg" alt="Profile Photo"> <!-- ضع هنا رابط صورة كمال الأجسام -->
+        <img src="profile.jpg" alt="Profile Photo">
         <div class="profile-name">
             <a href="https://www.facebook.com/hulkELMAHALA?mibextid=ZbWKwL" title="Coach Mohamed El-ekhtiar" style="color: #00ff00; text-decoration: none;">
                 Coach Mohamed El-ekhtiar <i class="fas fa-dumbbell"></i>
@@ -113,12 +120,12 @@
             <div class="social-group">
                 <div>
                     <a href="https://www.facebook.com/share/iUzGdqFvPSf9J1yz/" title="Facebook Women">
-                        <i class="fab fa-facebook"></i> جروب البنات 
+                        <i class="fab fa-facebook"></i> صفحة النساء
                     </a>
                 </div>
                 <div>
                     <a href="https://www.facebook.com/hulkELMAHALA?mibextid=ZbWKwL" title="Facebook Men">
-                        <i class="fab fa-facebook"></i> صفحة الجيم العامه
+                        <i class="fab fa-facebook"></i> صفحة الرجال
                     </a>
                 </div>
             </div>
